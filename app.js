@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
           total++;
         if (i > 10 && squares[i - width].classList.contains("bomb")) total++;
         if (
-          i > 11 &&
+          i > 10 &&
           !isLeftEdge &&
           squares[i - width - 1].classList.contains("bomb")
         )
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const newSquare = document.getElementById(newId);
         click(newSquare);
       }
-      if (currentId > 11 && !isLeftEdge) {
+      if (currentId > 10 && !isLeftEdge) {
         const newId = parseInt(currentId) - 1 - width;
         const newSquare = document.getElementById(newId);
         click(newSquare);
